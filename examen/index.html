@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen</title>
+</head>
+<body>
+  <input type="text" id="codigo" placeholder="Codigo" >
+  <input type="text" id="titulo" placeholder="titulo">
+  <input type="text" id="autor" placeholder="autor">
+  <input type="text" id="editorial" placeholder="editorial">
+  <input type="date" id="editorial" placeholder="fecha_ingreso">
+  <input type="date" id="editorial" placeholder="fecha_publicacion">
+  <button type="submit">Enviar</button>
+
+    <script>
+        /*Realizar la validación de datos de libros en JavaScript: 
+        código=alfanumérico de 5 caracteres, titulo=alfanumérico de 100 caracteres, autor=alfanumérico de 60 caracteres,
+         editorial=alfanumérico de 30 caracteres, fecha de publicación=tipo date, fecha de ingreso=tipo date).
+          La fecha de ingreso debe ser mayor a la fecha de publicación.
+         Poner el código en la respuesta Y enviar el enlace de GitLab al correo institucional*/
+function validardatos(){
+    codigo = document.getElementById("codigo").value;
+     var correcto=/^[a-zA-Z0-9\_\-]{5}$/;
+     if(codigo.match(correcto))
+     alert("Es alfanumerico, tiene 5 caracteres")
+}
+function validardatos(){
+    titulo = document.getElementById("titulo").value;
+     var correcto=/^[a-zA-Z0-9\_\-]{100}$/;
+     if(codigo.match(correcto))
+     alert("Es alfanumerico, tiene 100 caracteres")
+}
+function validardatos(){
+    autor = document.getElementById("autor").value;
+     var correcto=/^[a-zA-Z0-9\_\-]{60}$/;
+     if(codigo.match(correcto))
+     alert("Es alfanumerico, tiene 60 caracteres")
+}
+function validardatos(){
+    editorial = document.getElementById("editorial").value;
+     var correcto=/^[a-zA-Z0-9\_\-]{30}$/;
+     if(codigo.match(correcto))
+     alert("Es alfanumerico, tiene 30 caracteres")
+}
+function validardatos(){
+    fecha_ingreso = document.getElementById("editorial").value;
+    fecha_publicacion = document.getElementById("editorial").value;
+if(fechaingreso>fechapublicacion){
+    alert("Es valido, la fecha de ingreso es mayor ");
+    }
+                }
+
+    </script>
+</body>
+</html>
